@@ -4,15 +4,27 @@
   <meta charset="utf-8">
   
   
-  <title>Dynablade的博客</title>
+  <title>github-pages部署hexo的心得 | Dynablade的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Dynablade的博客">
-<meta property="og:url" content="https://dynablade01.github.io/index.html">
+  <meta name="description" content="在部署我的博客时，非常顺利，偶尔有一两个小问题。其中最大的问题反而是部署到GitHub时竟然没有报错！然后我复盘了很久，直到它报错为止我才敢说自己弄明白的。先卖个关子想看究竟是什么问题的直接往下翻  前期准备官网已经说过了，要装的软件只有Node.js和Git（可能我电脑用到现在，装过的软件太多，官方漏了什么依赖的软件，我也还没有发现）。 我是Win 10系统，所以本博客可能只对Windows的小">
+<meta property="og:type" content="article">
+<meta property="og:title" content="github-pages部署hexo的心得">
+<meta property="og:url" content="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/index.html">
 <meta property="og:site_name" content="Dynablade的博客">
+<meta property="og:description" content="在部署我的博客时，非常顺利，偶尔有一两个小问题。其中最大的问题反而是部署到GitHub时竟然没有报错！然后我复盘了很久，直到它报错为止我才敢说自己弄明白的。先卖个关子想看究竟是什么问题的直接往下翻  前期准备官网已经说过了，要装的软件只有Node.js和Git（可能我电脑用到现在，装过的软件太多，官方漏了什么依赖的软件，我也还没有发现）。 我是Win 10系统，所以本博客可能只对Windows的小">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/hexo_init.png">
+<meta property="og:image" content="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/hexo_generate.png">
+<meta property="og:image" content="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/hexo_server.png">
+<meta property="og:image" content="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/hexo_web.png">
+<meta property="og:image" content="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/github_settings.png">
+<meta property="og:image" content="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/developer_settings.png">
+<meta property="og:image" content="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/tokens.png">
+<meta property="article:published_time" content="2022-02-27T08:58:02.000Z">
+<meta property="article:modified_time" content="2022-02-27T14:35:24.545Z">
 <meta property="article:author" content="Dynablade">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/hexo_init.png">
   
     <link rel="alternate" href="/atom.xml" title="Dynablade的博客" type="application/atom+xml">
   
@@ -69,9 +81,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="技术/心得-github-pages部署hexo的心得" class="h-entry article article-type-技术/心得" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="技术/心得-github-pages部署hexo的心得" class="h-entry article article-type-技术/心得" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/" class="article-date">
   <time class="dt-published" datetime="2022-02-27T08:58:02.000Z" itemprop="datePublished">2022-02-27</time>
@@ -84,8 +94,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/">github-pages部署hexo的心得</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      github-pages部署hexo的心得
     </h1>
   
 
@@ -198,109 +208,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-我的第一篇博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2022-02-27T07:43:03.000Z" itemprop="datePublished">2022-02-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-    </h1>
+    <a href="/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">我的第一篇博客</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>这是我人生中写的第一篇静态博客，也是第一次使用Mark Down语言。现在我还正在使用VSCode来撰写，还不知道效果怎样，因此也不能断言我的尝试目前究竟是成功还是失败。</p>
-<hr>
-<p>在写第一篇避坑心得之前，先谈谈感想吧。我的文笔和表达能力很差。为什么即使这样还要写博客呢？在自学<strong>电脑</strong>时，我看了很多视频以及别人的博客。我自己偶尔参与讨论，也写了一些（没有发表的）的爬虫代码。要把我归类的话，我以前一直都属于绝大多数的，不发表评论且不创造内容的<strong>用户</strong>，现在属于依旧没有发表评论也没创造内容的<strong>互联网成员</strong>。</p>
-<hr>
-<p><strong>用户</strong>和<strong>成员</strong>之间有什么区别呢？前者依赖各大公司的服务在网上讲废话，但是只要<em>身份证号</em>或者<em>手机号</em>被互联网公司封杀，就不再是<strong>用户</strong>了。我想问：假如一个人在面试某个大厂，跟人家透露“我也用你们的账号，但是早就被封了”，会有什么下场？不行，这话题不能深入下去了。</p>
-<hr>
-<p>前面我说我“自学<strong>电脑</strong>”而不是“自学<strong>编程</strong>”，是因为有个博主说，要当个解决问题的人，而不是当个<del>码农</del>程序员。学习写字，目的不是为了拿支笔，“唰唰”地在纸上摩擦，让一天就这么过去了，而是为了精进自己。是为了让自己能离开所谓的“大厂”还能够生存下去，而不是往大厂里面挤。</p>
-<hr>
-<p>话说回来，我写<del>碎碎念</del>博客的目的是什么呢？今天看到个视频<a target="_blank" rel="noopener" href="https://github.com/hansonwang99">博主</a>，说做开源项目可以累积经验。但我连开源项目都做不来，该怎么办呢？他还有个视频说，在学习过程中，最好写技术博客，不要怕被喷。这样就可以避免忘记自己已经学会的东西。如果发现自己的问题网上没有，而自己经过研究发现了解决办法，就可以写进博客被人搜到。我想起我上次就搞定了一个网上搜不到办法的小问题，如果再博客写下来，然后再碰巧被有同样问题的人搜到。那也算是<del>为互联网做贡献</del>在互联网上参与讨论了。博主说，写技术博客还可以给自己的简历加分。<br>我也爱在网上写<del>废文</del>东西，但是考虑到安全问题，就很长一段时间不写了。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dynablade01.github.io/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="cl05dogxg00023wchen5y58xf" data-title="我的第一篇博客" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/27/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-02-27T05:39:27.886Z" itemprop="datePublished">2022-02-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/27/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dynablade01.github.io/2022/02/27/hello-world/" data-id="cl05dogxf00013wch7nnwgw9k" data-title="Hello World" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
