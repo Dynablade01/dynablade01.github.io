@@ -1,394 +1,438 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Dynablade的博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dynablade01.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.10.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Dynablade的博客">
 <meta property="og:url" content="https://dynablade01.github.io/index.html">
 <meta property="og:site_name" content="Dynablade的博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Dynablade">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Dynablade的博客" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.0.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Dynablade的博客</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://dynablade01.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="技术/心得-github-pages部署hexo的心得" class="h-entry article article-type-技术/心得" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/" class="article-date">
-  <time class="dt-published" datetime="2022-02-27T08:58:02.000Z" itemprop="datePublished">2022-02-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/">github-pages部署hexo的心得</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>在部署我的博客时，非常顺利，偶尔有一两个小问题。其中最大的问题反而是部署到GitHub时竟然没有报错！然后我复盘了很久，直到它报错为止我才敢说自己弄明白的。<del>先卖个关子</del>想看究竟是什么问题的直接<a href="#%E8%BF%90%E8%A1%8C%E9%83%A8%E7%BD%B2">往下翻</a></p>
-<hr>
-<h4 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h4><p>官网已经说过了，要装的软件只有Node.js和Git（可能我电脑用到现在，装过的软件太多，官方漏了什么依赖的软件，我也还没有发现）。</p>
-<p>我是Win 10系统，所以本博客可能只对Windows的小伙伴有用。</p>
-<p>所以，第一步：确认两个软件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<p>没有报错就不需要再装软件了。如果报错，请检查开始菜单，或者在本地搜索，是否安装了<a href="nodejs.org">Node.js</a>和<a href="git-scm.com">Git</a>。如果安装，请设置环境变量，在PATH添加相关程序的所在目录。也可以在你已经安装的IDE里面寻找相关软件，并添加到环境变量。嫌麻烦的也可以重新安装。</p>
-<p>如果无法访问nodejs.org和git-scm.com，可以选择翻墙或使用国内镜像。</p>
-<hr>
-<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>确认上一节命令可以显示最新版本号以后，安装Hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>以后要卸载，也可以执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>亲测，执行<code>npm uninstall hexo</code>不能卸载以本博方法安装的hexo。</p>
-<p>接下来就是我碰到的<em><strong>第一个坑</strong></em>了。</p>
-<p>首先在命令行确认<code>hexo -v</code>，一般全都报错。如果正常的话，那么会显示一列版本号。</p>
-<hr>
-<h4 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h4><p>由于资源管理器的搜索功能无法触及隐藏文件夹。所以只有根据<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000013759416">网上的教程</a>，添加环境变量C:&#x2F;Users&#x2F;xxx&#x2F;AppData&#x2F;Roaming&#x2F;npm。然后再确认</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<p>官方文档比较缺乏维护，所以还是多上网搜索一下。</p>
-<hr>
-<h4 id="本地测试"><a href="#本地测试" class="headerlink" title="本地测试"></a>本地测试</h4><p>首先，在需要搭建博客的位置<strong>新建一个文件夹</strong>。如果以后需要删除博客，直接删除该文件夹即可，不用运行任何卸载程序。然后命令行进入该文件夹，执行如下命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p>显示如下输出则成功创建博客</p>
-<img src="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/hexo_init.png" width="750px">
 
 
-<p><em><strong>如果你不熟悉操作，并且电脑还没运行过hexo，那么我建议不更改任何配置，不撰写任何博客，直接开始下一步测试。因为这样做的话，测试失败时，寻找问题可以排除更多未知数；测试成功后，在自定义配置和写博客时，发现问题可以一步步排查，也可以一步一步地试错。</strong></em></p>
-<p>成功后，再执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>显示如下输出则成功生成网站所需文件</p>
-<img src="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/hexo_generate.png" width="750px">
-
-<p>紧接着再执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<img src="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/hexo_server.png" width="750px">
-如图，在浏览器输入http://localhost:4000 
+<link rel="canonical" href="https://dynablade01.github.io/">
 
 
 
-<p>如果显示如下网页，恭喜你，hexo安装就此成功！</p>
-<img src="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/hexo_web.png" width="750px">
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
 
-<hr>
-<h4 id="github-pages在线部署"><a href="#github-pages在线部署" class="headerlink" title="github-pages在线部署"></a>github-pages在线部署</h4><p>刚才完成了本地博客的安装，但是即使你博客写得再好也没人观看。博客就是需要给人在线观赏的。<br>hexo这个静态博客的使用流程，每次都是，你写完博客，<code>hexo g</code>再<code>hexo d</code>更新服务器上的页面。<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment#SFTP">官方文档</a>已经介绍了部署的方法。你可以像刚才链接里介绍的那样用服务器部署，不过，要一个自己的服务器价格有点贵，而且还要有自己的域名。这样太麻烦了，所以还是用github方便一点。<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment#Git">官方文档</a>有点难懂，而且还有些过时，所以我重新总结一遍（给自己看）。</p>
-<h5 id="建立Github仓库"><a href="#建立Github仓库" class="headerlink" title="建立Github仓库"></a>建立Github仓库</h5><p>登录自己的GitHub，新建一个账户&lt;username&gt;.github.io，其中&lt;username&gt;必须与自己的GitHub用户名完全一致。每个GitHub用户最多只能拥有一个&lt;username&gt;.github.io主页，但可以在其他仓库新开一个&lt;username&gt;.github.io&#x2F;&lt;仓库名称&gt;的主页。</p>
-<h5 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h5><p>部署之前<strong>必须</strong>修改配置文件，打开文件夹下的_config.yml，翻到最后，作如下修改：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://dynablade01.github.com/dynablade01.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
-<p>（其实这里有些问题）</p>
-<h5 id="运行部署"><a href="#运行部署" class="headerlink" title="运行部署"></a>运行部署</h5><p>我先运行一遍<code>hexo deploy</code>，结果果然失败。然后根据教程安装组件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<p>我比教程少一个<code>--save</code>，不知将来会引发什么问题，先在这留个伏笔……<br>接着我运行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<p>然后终端显示部署成功。我到我的主页来看，结果发现没有网页？！难道我果然踩坑了？这当中<em>不止一个</em>问题啊！<br>研究了一会儿以后，我就突然发现，网页可以通过dynablade01.github.io访问了！运行部署至此大功告成！</p>
-<hr>
-<h4 id="身份验证"><a href="#身份验证" class="headerlink" title="身份验证"></a>身份验证</h4><p>刚才的问题是什么呢？都看到这里了，很明显，我在此过程中没有登录github的操作。我想：这是不是谁都可以撰写、修改、删除我的博客了？接下来我就开始了附加的试验。不想看的可以<a href="#%E6%92%B0%E5%86%99%E5%8D%9A%E5%AE%A2">跳过这一节</a>。首先，我找到别人的GitHub主页，对他的仓库进行部署，果然报403错误。又试了以下我自己的主页，还是可以上传。<br>于是我登出了我的GitHub，再部署，还是成功。最后我注销了我在Sourcetree登录的GitHub账号，终于不能上传博客了，提示要用户名和密码。这里我再强调一下：<strong>我试图部署到别人的仓库时，程序并没有提醒我输入密码，而是直接报错</strong>。我输入了用户名和密码，结果提示失败。试了好几遍，用户名这一栏，我既输过我的邮箱也输过我的用户名。后来在网上搜了一下，发现以前可以直接用密码登录的，现在只能用token了。</p>
-<h5 id="部署到github-pages的正确姿势"><a href="#部署到github-pages的正确姿势" class="headerlink" title="部署到github-pages的正确姿势"></a>部署到github-pages的正确姿势</h5><p>首先登录github，进入Settings</p>
-<img src="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/github_settings.png" width="200px">
-
-<hr>
-<p>进入开发者设置</p>
-<img src="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/developer_settings.png" width="750px">
-
-<p>在如下画面选择生成一个token</p>
-<img src="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/tokens.png" width="750px">
-
-<p>再按如下方式配置</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://&lt;token&gt;@&lt;username&gt;.github.com/&lt;username&gt;.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
-<p>其中&lt;token&gt;是刚才生成的token。请完整复制到此处。<br>接下来就可以在登出时也能成功部署博客了。</p>
-<hr>
-<p>研究这个细节的用处，可以让你在别人的（公司的）电脑上，用无痕浏览器更新自己的静态博客。</p>
-<h4 id="撰写博客"><a href="#撰写博客" class="headerlink" title="撰写博客"></a>撰写博客</h4><p><strong>进入前面建的文件夹，而不是它的子目录</strong>，接下来的事情很简单，执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="built_in">dir</span>/origin 我的博客</span><br></pre></td></tr></table></figure>
-
-<p>就新建了一篇博文。<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/writing">官方文档</a>的layout表示文章的布局，大概是用来给博文归类的，最后一个参数就是文章的题目。新建完以后，直接进入.&#x2F;source&#x2F;_posts编辑那个新产生的.md文件，用markdown语言编写博客。我最推荐的文本编辑器就是vscode，不过写md文件的时候，最好关掉copilot。</p>
-<p>每次更新博客时，只需要依次执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<p>然后可以执行如下命令进行预览</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>最后执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>直接应用更新。只不过github-pages的更新比较慢，更新时，你进入主页仓库，查看github-pages，它从Pending变成Active时，你的博客就更新完成了。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/" data-id="cl05dogxb00003wchapb656bj" data-title="github-pages部署hexo的心得" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-我的第一篇博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2022-02-27T07:43:03.000Z" itemprop="datePublished">2022-02-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>这是我人生中写的第一篇静态博客，也是第一次使用Mark Down语言。现在我还正在使用VSCode来撰写，还不知道效果怎样，因此也不能断言我的尝试目前究竟是成功还是失败。</p>
-<hr>
-<p>在写第一篇避坑心得之前，先谈谈感想吧。我的文笔和表达能力很差。为什么即使这样还要写博客呢？在自学<strong>电脑</strong>时，我看了很多视频以及别人的博客。我自己偶尔参与讨论，也写了一些（没有发表的）的爬虫代码。要把我归类的话，我以前一直都属于绝大多数的，不发表评论且不创造内容的<strong>用户</strong>，现在属于依旧没有发表评论也没创造内容的<strong>互联网成员</strong>。</p>
-<hr>
-<p><strong>用户</strong>和<strong>成员</strong>之间有什么区别呢？前者依赖各大公司的服务在网上讲废话，但是只要<em>身份证号</em>或者<em>手机号</em>被互联网公司封杀，就不再是<strong>用户</strong>了。我想问：假如一个人在面试某个大厂，跟人家透露“我也用你们的账号，但是早就被封了”，会有什么下场？不行，这话题不能深入下去了。</p>
-<hr>
-<p>前面我说我“自学<strong>电脑</strong>”而不是“自学<strong>编程</strong>”，是因为有个博主说，要当个解决问题的人，而不是当个<del>码农</del>程序员。学习写字，目的不是为了拿支笔，“唰唰”地在纸上摩擦，让一天就这么过去了，而是为了精进自己。是为了让自己能离开所谓的“大厂”还能够生存下去，而不是往大厂里面挤。</p>
-<hr>
-<p>话说回来，我写<del>碎碎念</del>博客的目的是什么呢？今天看到个视频<a target="_blank" rel="noopener" href="https://github.com/hansonwang99">博主</a>，说做开源项目可以累积经验。但我连开源项目都做不来，该怎么办呢？他还有个视频说，在学习过程中，最好写技术博客，不要怕被喷。这样就可以避免忘记自己已经学会的东西。如果发现自己的问题网上没有，而自己经过研究发现了解决办法，就可以写进博客被人搜到。我想起我上次就搞定了一个网上搜不到办法的小问题，如果再博客写下来，然后再碰巧被有同样问题的人搜到。那也算是<del>为互联网做贡献</del>在互联网上参与讨论了。博主说，写技术博客还可以给自己的简历加分。<br>我也爱在网上写<del>废文</del>东西，但是考虑到安全问题，就很长一段时间不写了。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dynablade01.github.io/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="cl05dogxg00023wchen5y58xf" data-title="我的第一篇博客" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/27/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-02-27T05:39:27.886Z" itemprop="datePublished">2022-02-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/27/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dynablade01.github.io/2022/02/27/hello-world/" data-id="cl05dogxf00013wch7nnwgw9k" data-title="Hello World" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Dynablade的博客</title>
   
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
 
-  
-    
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">二月 2022</a></li></ul>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
     </div>
   </div>
 
+  <div class="site-meta">
 
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Dynablade的博客</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/">github-pages部署hexo的心得</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/27/hello-world/">Hello World</a>
-          </li>
-        
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
       </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Dynablade</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 Dynablade<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+  </nav>
+</div>
 
+
+
+        </div>
+      </div>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
     
 
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dynablade01.github.io/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dynablade">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dynablade的博客">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Dynablade的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/" class="post-title-link" itemprop="url">github-pages部署hexo的心得</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-02-27 16:58:02" itemprop="dateCreated datePublished" datetime="2022-02-27T16:58:02+08:00">2022-02-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-03-01 11:52:48" itemprop="dateModified" datetime="2022-03-01T11:52:48+08:00">2022-03-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>在部署我的博客时，非常顺利，偶尔有一两个小问题。其中最大的问题反而是部署到GitHub时竟然没有报错！然后我复盘了很久，直到它报错为止我才敢说自己弄明白的。<del>先卖个关子</del>想看究竟是什么问题的直接<a href="#%E8%BF%90%E8%A1%8C%E9%83%A8%E7%BD%B2">往下翻</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/02/27/github-pages%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E5%BF%83%E5%BE%97/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dynablade01.github.io/2022/02/27/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dynablade">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dynablade的博客">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Dynablade的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/27/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-02-27 23:28:13" itemprop="dateCreated datePublished" datetime="2022-02-27T23:28:13+08:00">2022-02-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-03-01 11:52:28" itemprop="dateModified" datetime="2022-03-01T11:52:28+08:00">2022-03-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>本文保留到我弄懂Hexo为止</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/02/27/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dynablade01.github.io/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Dynablade">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dynablade的博客">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Dynablade的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">我的第一篇博客</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-02-27 15:43:03" itemprop="dateCreated datePublished" datetime="2022-02-27T15:43:03+08:00">2022-02-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-03-01 11:51:19" itemprop="dateModified" datetime="2022-03-01T11:51:19+08:00">2022-03-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>这是我人生中写的第一篇静态博客，也是第一次使用Mark Down语言。现在我还正在使用VSCode来撰写，还不知道效果怎样，因此也不能断言我的尝试目前究竟是成功还是失败。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dynablade</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
 
 
 
 
 
-  </div>
 </body>
 </html>
